@@ -5,6 +5,7 @@ import Welcome from './components/class/Welcome';
 // Name export
 // import {Greet} from './components/functional/greet';
 import Greet from './components/functional/Greet';
+import Hello from './components/jsx/Hello';
 
 class App extends Component { 
   render() {
@@ -14,6 +15,8 @@ class App extends Component {
         <Greet />
         {/* Sample class component */}
         <Welcome />
+        {/* Sample JSX and without JSX*/}
+        <Hello />
       </div>
     );
   }
