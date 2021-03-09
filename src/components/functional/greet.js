@@ -7,7 +7,7 @@ import React from 'react'
 // }
 
 // ES6
-const Greet = () => <h1>Hello Bonbon</h1>
+const Greet = () => <h1>Functional Component</h1>
 
 export default Greet;
 
