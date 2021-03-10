@@ -25,7 +25,9 @@ function NameList() {
       skill: 'Vue',
     },
   ];
-  const personList = persons.map((person) => <Person person={person} />);
+  const personList = persons.map((person) => (
+    <Person key={person.id} person={person} />
+  ));
   return (
     //   Approach 1 using array
     // <div>
@@ -35,7 +37,7 @@ function NameList() {
     // </div>
     // Approach 2 using array
     // <div>{nameList}</div>
-    // Approach 3 using object
+    // Approach 3 using object passing the props in components
     <div>{personList}</div>
   );
 }
