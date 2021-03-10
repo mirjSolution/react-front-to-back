@@ -3,6 +3,8 @@ import './App.css';
 import Welcome from './components/class/Welcome';
 import DestructuringClass from './components/destructuring/DestructuringClass';
 import DestructuringFunctional from './components/destructuring/DestructuringFunctional';
+import EventHandlingClass from './components/eventhandling/EventHandlingClass';
+import EventHandlingFunctional from './components/eventhandling/EventHandlingFunctional';
 
 // Name export
 // import {Greet} from './components/functional/greet';
@@ -65,6 +67,11 @@ class App extends Component {
         {/* Destructuring in functional and class component*/}
         <h1 style={{ color: 'red' }}>--Sample Destructuring Class--</h1>
         <DestructuringClass firstName='Clark' heroName='Superman' />
+        {/* Event Handling in functional and class component*/}
+        <h1 style={{ color: 'red' }}>--Sample Event Handling Functional--</h1>
+        <EventHandlingFunctional />
+        <h1 style={{ color: 'red' }}>--Sample Event Handling Class--</h1>
+        <EventHandlingClass />
       </div>
     );
   }
