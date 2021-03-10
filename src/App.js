@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Welcome from './components/class/Welcome';
+import DestructuringClass from './components/destructuring/DestructuringClass';
+import DestructuringFunctional from './components/destructuring/DestructuringFunctional';
 
 // Name export
 // import {Greet} from './components/functional/greet';
@@ -15,6 +17,10 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
+        <h1 style={{ color: 'blue' }}>
+          --See the source code on each of the subfolder inside the components
+          folder--
+        </h1>
         {/* Sample functional component */}
         <Greet />
         {/* Sample class component */}
@@ -53,6 +59,12 @@ class App extends Component {
         {/* Sample using setState*/}
         <h1 style={{ color: 'red' }}>--Sample using setState--</h1>
         <SetState incrementBy={5} />
+        {/* Destructuring in functional and class component*/}
+        <h1 style={{ color: 'red' }}>--Sample Destructuring Functional--</h1>
+        <DestructuringFunctional firstName='Bruce' heroName='Batman' />
+        {/* Destructuring in functional and class component*/}
+        <h1 style={{ color: 'red' }}>--Sample Destructuring Class--</h1>
+        <DestructuringClass firstName='Clark' heroName='Superman' />
       </div>
     );
   }
