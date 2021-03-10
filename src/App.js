@@ -8,6 +8,7 @@ import Greet from './components/functional/Greet';
 import Hello from './components/jsx/Hello';
 import ClassProps from './components/props/ClassProps';
 import FunctionProps from './components/props/FunctionProps';
+import SetState from './components/setState/SetState';
 import ClassState from './components/state/ClassState';
 
 class App extends Component {
@@ -49,6 +50,9 @@ class App extends Component {
         {/* Sample State using class component*/}
         <h1 style={{ color: 'red' }}>--Sample State using class component--</h1>
         <ClassState />
+        {/* Sample using setState*/}
+        <h1 style={{ color: 'red' }}>--Sample using setState--</h1>
+        <SetState incrementBy={5} />
       </div>
     );
   }
