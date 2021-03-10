@@ -8,6 +8,7 @@ import Greet from './components/functional/Greet';
 import Hello from './components/jsx/Hello';
 import ClassProps from './components/props/ClassProps';
 import FunctionProps from './components/props/FunctionProps';
+import ClassState from './components/state/ClassState';
 
 class App extends Component {
   render() {
@@ -45,6 +46,9 @@ class App extends Component {
           <h2>Props with h2 children</h2>
         </ClassProps>
         <ClassProps firstName='Xiegryd' nickName='Xiejei' />
+        {/* Sample State using class component*/}
+        <h1 style={{ color: 'red' }}>--Sample State using class component--</h1>
+        <ClassState />
       </div>
     );
   }
