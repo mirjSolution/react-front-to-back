@@ -11,6 +11,7 @@ import EventHandlingFunctional from './components/eventHandling/EventHandlingFun
 // import {Greet} from './components/functional/greet';
 import Greet from './components/functional/Greet';
 import Hello from './components/jsx/Hello';
+import ParentComponent from './components/methodAsProps/ParentComponent';
 import ClassProps from './components/props/ClassProps';
 import FunctionProps from './components/props/FunctionProps';
 import SetState from './components/setState/SetState';
@@ -76,6 +77,9 @@ class App extends Component {
         {/* Binding Event Handler*/}
         <h1 style={{ color: 'red' }}>--Sample Binding Event Handler--</h1>
         <EventBind />
+        {/* Method as Props*/}
+        <h1 style={{ color: 'red' }}>--Sample Method as Props--</h1>
+        <ParentComponent />
       </div>
     );
   }
