@@ -7,6 +7,8 @@ class SetState extends Component {
     this.state = {
       counter: 0,
     };
+    // Sample binding in the class constructor
+    this.increment = this.increment.bind(this);
   }
 
   increment() {
@@ -18,8 +20,8 @@ class SetState extends Component {
     );
     console.log('Synchoronous ' + this.state.counter);
   }
-
-  incrementByProps() {
+  // Class property as arrow function automatically bind the property
+  incrementByProps = () => {
     this.setState(
       (prevState, props) => ({
         counter: prevState.counter + props.incrementBy,
@@ -27,14 +29,14 @@ class SetState extends Component {
       () => console.log('Callback ' + this.state.counter)
     );
     console.log('Synchoronous ' + this.state.counter);
-  }
+  };
 
   render() {
     return (
       <div>
         <h1>Counter - {this.state.counter}</h1>
-        <button onClick={() => this.increment()}>Increment by 1</button>
-        <button onClick={() => this.incrementByProps()}>Increment by 5</button>
+        <button onClick={this.increment}>Increment by 1</button>
+        <button onClick={this.incrementByProps}>Increment by 5</button>
       </div>
     );
   }

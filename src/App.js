@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
+import EventBind from './components/bindingEventHandlers/EventBind';
 import Welcome from './components/class/Welcome';
 import DestructuringClass from './components/destructuring/DestructuringClass';
 import DestructuringFunctional from './components/destructuring/DestructuringFunctional';
-import EventHandlingClass from './components/eventhandling/EventHandlingClass';
-import EventHandlingFunctional from './components/eventhandling/EventHandlingFunctional';
+import EventHandlingClass from './components/eventHandling/EventHandlingClass';
+import EventHandlingFunctional from './components/eventHandling/EventHandlingFunctional';
 
 // Name export
 // import {Greet} from './components/functional/greet';
@@ -72,6 +73,9 @@ class App extends Component {
         <EventHandlingFunctional />
         <h1 style={{ color: 'red' }}>--Sample Event Handling Class--</h1>
         <EventHandlingClass />
+        {/* Binding Event Handler*/}
+        <h1 style={{ color: 'red' }}>--Sample Binding Event Handler--</h1>
+        <EventBind />
       </div>
     );
   }
