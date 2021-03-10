@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import EventBind from './components/bindingEventHandlers/EventBind';
 import Welcome from './components/class/Welcome';
+import UserGreeting from './components/conditionalRendering/UserGreeting';
 import DestructuringClass from './components/destructuring/DestructuringClass';
 import DestructuringFunctional from './components/destructuring/DestructuringFunctional';
 import EventHandlingClass from './components/eventHandling/EventHandlingClass';
@@ -80,6 +81,9 @@ class App extends Component {
         {/* Method as Props*/}
         <h1 style={{ color: 'red' }}>--Sample Method as Props--</h1>
         <ParentComponent />
+        {/* Conditional Rendering */}
+        <h1 style={{ color: 'red' }}>--Sample Conditional Rendering--</h1>
+        <UserGreeting />
       </div>
     );
   }
