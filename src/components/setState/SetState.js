@@ -36,7 +36,9 @@ class SetState extends Component {
       <div>
         <h1>Counter - {this.state.counter}</h1>
         <button onClick={this.increment}>Increment by 1</button>
-        <button onClick={this.incrementByProps}>Increment by 5</button>
+        <button onClick={this.incrementByProps}>
+          Increment by {this.props.incrementBy}
+        </button>
       </div>
     );
   }

@@ -12,6 +12,7 @@ import EventHandlingFunctional from './components/eventHandling/EventHandlingFun
 // import {Greet} from './components/functional/greet';
 import Greet from './components/functional/Greet';
 import Hello from './components/jsx/Hello';
+import NameList from './components/listRendering/NameList';
 import ParentComponent from './components/methodAsProps/ParentComponent';
 import ClassProps from './components/props/ClassProps';
 import FunctionProps from './components/props/FunctionProps';
@@ -63,7 +64,7 @@ class App extends Component {
         <ClassState />
         {/* Sample using setState*/}
         <h1 style={{ color: 'red' }}>--Sample using setState--</h1>
-        <SetState incrementBy={5} />
+        <SetState incrementBy={2} />
         {/* Destructuring in functional and class component*/}
         <h1 style={{ color: 'red' }}>--Sample Destructuring Functional--</h1>
         <DestructuringFunctional firstName='Bruce' heroName='Batman' />
@@ -84,6 +85,9 @@ class App extends Component {
         {/* Conditional Rendering */}
         <h1 style={{ color: 'red' }}>--Sample Conditional Rendering--</h1>
         <UserGreeting />
+        {/* List Rendering */}
+        <h1 style={{ color: 'red' }}>--Sample List Rendering--</h1>
+        <NameList />
       </div>
     );
   }
