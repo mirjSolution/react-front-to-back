@@ -22,6 +22,7 @@ import ClassState from './components/state/ClassState';
 import Inline from './components/stylingAndCssBasics/Inline';
 import ModuleCss from './components/stylingAndCssBasics/ModuleCss';
 import Stylesheet from './components/stylingAndCssBasics/Stylesheet';
+import LifeCycleMountingParent from './components/componentMountingLifecycleMethod/LifeCycleMountingParent';
 
 class App extends Component {
   render() {
@@ -102,6 +103,15 @@ class App extends Component {
         {/* Basic of Form Handling */}
         <h1 style={{ color: 'red' }}>--Basics of Form Handling --</h1>
         <Form />
+        {/* Lifecycle Methods */}
+        <h1 style={{ color: 'red' }}>
+          --Component Mounting Lifecycle Methods --
+        </h1>
+        <p>
+          --Check the browser console to see the order of execution during the
+          mounting phase--
+        </p>
+        <LifeCycleMountingParent />
       </div>
     );
   }
