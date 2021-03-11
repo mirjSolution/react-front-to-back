@@ -18,6 +18,9 @@ import ClassProps from './components/props/ClassProps';
 import FunctionProps from './components/props/FunctionProps';
 import SetState from './components/setState/SetState';
 import ClassState from './components/state/ClassState';
+import Inline from './components/stylingAndCssBasics/Inline';
+import ModuleCss from './components/stylingAndCssBasics/ModuleCss';
+import Stylesheet from './components/stylingAndCssBasics/Stylesheet';
 
 class App extends Component {
   render() {
@@ -88,6 +91,13 @@ class App extends Component {
         {/* List Rendering */}
         <h1 style={{ color: 'red' }}>--Sample List Rendering--</h1>
         <NameList />
+        {/* Styling and CSS Basics */}
+        <h1 style={{ color: 'red' }}>--Sample Styling using External CSS --</h1>
+        <Stylesheet primary={true} />
+        <h1 style={{ color: 'red' }}>--Sample Styling using Inline CSS --</h1>
+        <Inline />
+        <h1 style={{ color: 'red' }}>--Sample Styling using CSS Modules --</h1>
+        <ModuleCss />
       </div>
     );
   }
