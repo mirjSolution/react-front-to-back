@@ -8,7 +8,7 @@ class LifeCycleMountingChildren extends Component {
       name: 'Rico',
     };
 
-    console.log('Lifecycle Mounting constructor');
+    console.log('Lifecycle Mounting children constructor');
   }
 
   static getDerivedStateFromProps(props, state) {

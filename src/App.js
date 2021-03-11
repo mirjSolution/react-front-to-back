@@ -23,6 +23,7 @@ import Inline from './components/stylingAndCssBasics/Inline';
 import ModuleCss from './components/stylingAndCssBasics/ModuleCss';
 import Stylesheet from './components/stylingAndCssBasics/Stylesheet';
 import LifeCycleMountingParent from './components/componentMountingLifecycleMethod/LifeCycleMountingParent';
+import LifeCycleUpdatingParent from './components/componentUpdatingLifecycleMethod/LifeCycleUpdatingParent';
 
 class App extends Component {
   render() {
@@ -112,6 +113,14 @@ class App extends Component {
           mounting phase--
         </p>
         <LifeCycleMountingParent />
+        <h1 style={{ color: 'red' }}>
+          --Component Updating Lifecycle Methods --
+        </h1>
+        <p>
+          --Check the browser console to see the order of execution during the
+          updating phase nd click the change state button--
+        </p>
+        <LifeCycleUpdatingParent />
       </div>
     );
   }
