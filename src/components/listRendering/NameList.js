@@ -3,7 +3,7 @@ import Person from './Person';
 function NameList() {
   // Using Array
   const names = ['Bruce', 'Clark', 'Diana'];
-  const nameList = names.map((name) => <h2>{name}</h2>);
+  const nameList = names.map((name, index) => <h2 key={index}>{name}</h2>);
   //   Using Object
   //   const persons = [
   //     {
