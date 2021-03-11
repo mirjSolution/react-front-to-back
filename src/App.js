@@ -7,6 +7,7 @@ import DestructuringClass from './components/destructuring/DestructuringClass';
 import DestructuringFunctional from './components/destructuring/DestructuringFunctional';
 import EventHandlingClass from './components/eventHandling/EventHandlingClass';
 import EventHandlingFunctional from './components/eventHandling/EventHandlingFunctional';
+import Form from './components/formHandling/Form';
 
 // Name export
 // import {Greet} from './components/functional/greet';
@@ -98,6 +99,9 @@ class App extends Component {
         <Inline />
         <h1 style={{ color: 'red' }}>--Sample Styling using CSS Modules --</h1>
         <ModuleCss />
+        {/* Basic of Form Handling */}
+        <h1 style={{ color: 'red' }}>--Basics of Form Handling --</h1>
+        <Form />
       </div>
     );
   }
