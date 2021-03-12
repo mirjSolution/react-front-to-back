@@ -2,8 +2,12 @@ import React from 'react';
 import Column from './Column';
 
 function Table() {
+  const styles = {
+    display: 'flex',
+    justifyContent: 'center',
+  };
   return (
-    <table>
+    <table style={styles}>
       <tbody>
         <tr>
           <Column />
