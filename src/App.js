@@ -27,6 +27,7 @@ import LifeCycleUpdatingParent from './components/componentUpdatingLifecycleMeth
 import FragmentDemo from './components/fragments/FragmentDemo';
 import Table from './components/fragments/Table';
 import ParentComp from './components/PureComponent/ParentComp';
+import ParentComp1 from './components/memo/ParentComp1';
 
 class App extends Component {
   render() {
@@ -131,6 +132,9 @@ class App extends Component {
         {/* Pure Components */}
         <h1 style={{ color: 'red' }}>--Pure Components Class--</h1>
         <ParentComp />
+        {/* Memo */}
+        <h1 style={{ color: 'red' }}>--Memo Functional Component--</h1>
+        <ParentComp1 />
       </div>
     );
   }
