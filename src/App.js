@@ -24,6 +24,8 @@ import ModuleCss from './components/stylingAndCssBasics/ModuleCss';
 import Stylesheet from './components/stylingAndCssBasics/Stylesheet';
 import LifeCycleMountingParent from './components/componentMountingLifecycleMethod/LifeCycleMountingParent';
 import LifeCycleUpdatingParent from './components/componentUpdatingLifecycleMethod/LifeCycleUpdatingParent';
+import FragmentDemo from './components/fragments/FragmentDemo';
+import Table from './components/fragments/Table';
 
 class App extends Component {
   render() {
@@ -121,6 +123,10 @@ class App extends Component {
           updating phase nd click the change state button--
         </p>
         <LifeCycleUpdatingParent />
+        {/* Lifecycle Methods */}
+        <h1 style={{ color: 'red' }}>--Fragments--</h1>
+        <FragmentDemo />
+        <Table />
       </div>
     );
   }
