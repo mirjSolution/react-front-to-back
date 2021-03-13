@@ -39,6 +39,8 @@ import User from './components/renderProps/User';
 import Counter from './components/renderProps/Counter';
 import { UserProvider } from './components/context/userContext';
 import ComponentsC from './components/context/ComponentsC';
+import PostList from './components/reactHTTP/PostList';
+import PostForm from './components/reactHTTP/PostForm';
 
 // import PortalDemo from './components/portals/PortalDemo';
 // import Hero from './components/errorboundary/Hero';
@@ -209,6 +211,11 @@ class App extends Component {
         <UserProvider value='Rico'>
           <ComponentsC />
         </UserProvider>
+        {/* React HTTP */}
+        <h1 style={{ color: 'red' }}>--React Axios HTTP GET--</h1>
+        <PostList />
+        <h1 style={{ color: 'red' }}>--React Axios HTTP POST--</h1>
+        <PostForm />
       </div>
     );
   }
