@@ -31,6 +31,9 @@ import ParentComp1 from './components/memo/ParentComp1';
 import RefsDemo from './components/refs/RefsDemo';
 import FocusInput from './components/refs/FocusInput';
 import FRParentInput from './components/refs/FRParentInput';
+import ClickCounter from './components/higherOrderComponent/ClickCounter';
+import HoverCounter from './components/higherOrderComponent/HoverCounter';
+
 // import PortalDemo from './components/portals/PortalDemo';
 // import Hero from './components/errorboundary/Hero';
 // import ErrorBoundary from './components/errorboundary/ErrorBoundary';
@@ -163,6 +166,10 @@ class App extends Component {
         <ErrorBoundary>
           <Hero heroName='Joker' />
         </ErrorBoundary> */}
+        {/* Higher Order Component */}
+        <h1 style={{ color: 'red' }}>--Higher Order Components--</h1>
+        <ClickCounter name='Rico' />
+        <HoverCounter />
       </div>
     );
   }
