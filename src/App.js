@@ -37,6 +37,8 @@ import ClickCounterTwo from './components/renderProps/ClickCounterTwo';
 import HoverCounterTwo from './components/renderProps/HoverCounterTwo';
 import User from './components/renderProps/User';
 import Counter from './components/renderProps/Counter';
+import { UserProvider } from './components/context/userContext';
+import ComponentsC from './components/context/ComponentsC';
 
 // import PortalDemo from './components/portals/PortalDemo';
 // import Hero from './components/errorboundary/Hero';
@@ -202,6 +204,11 @@ class App extends Component {
           )}
         </Counter>
         <User render={(isLoggedIn) => (isLoggedIn ? 'Rico' : 'Guest')} />
+        {/* Context */}
+        <h1 style={{ color: 'red' }}>--Context--</h1>
+        <UserProvider value='Rico'>
+          <ComponentsC />
+        </UserProvider>
       </div>
     );
   }
