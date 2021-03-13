@@ -28,6 +28,9 @@ import FragmentDemo from './components/fragments/FragmentDemo';
 import Table from './components/fragments/Table';
 import ParentComp from './components/PureComponent/ParentComp';
 import ParentComp1 from './components/memo/ParentComp1';
+import RefsDemo from './components/refs/RefsDemo';
+import FocusInput from './components/refs/FocusInput';
+import FRParentInput from './components/refs/FRParentInput';
 
 class App extends Component {
   render() {
@@ -135,6 +138,13 @@ class App extends Component {
         {/* Memo */}
         <h1 style={{ color: 'red' }}>--Memo Functional Component--</h1>
         <ParentComp1 />
+        {/* Refs */}
+        <h1 style={{ color: 'red' }}>--Refs--</h1>
+        <RefsDemo />
+        <p> Ref to a child component from a parent component </p>
+        <FocusInput />
+        <p> Ref forwarding</p>
+        <FRParentInput />
       </div>
     );
   }
