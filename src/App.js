@@ -31,7 +31,9 @@ import ParentComp1 from './components/memo/ParentComp1';
 import RefsDemo from './components/refs/RefsDemo';
 import FocusInput from './components/refs/FocusInput';
 import FRParentInput from './components/refs/FRParentInput';
-import PortalDemo from './components/portals/PortalDemo';
+// import PortalDemo from './components/portals/PortalDemo';
+import Hero from './components/errorboundary/Hero';
+import ErrorBoundary from './components/errorboundary/ErrorBoundary';
 
 class App extends Component {
   render() {
@@ -147,9 +149,20 @@ class App extends Component {
         <p> Ref forwarding</p>
         <FRParentInput />
         {/* Portals */}
-        <h1 style={{ color: 'red' }}>--Portals--</h1>
+        {/* <h1 style={{ color: 'red' }}>--Portals--</h1>
         <p> Portals </p>
-        <PortalDemo />
+        <PortalDemo /> */}
+        {/* Error Boundary */}
+        <h1 style={{ color: 'red' }}>--Error Boundary--</h1>
+        <ErrorBoundary>
+          <Hero heroName='Batman' />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName='Superman' />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName='Joker' />
+        </ErrorBoundary>
       </div>
     );
   }
