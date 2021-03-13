@@ -32,8 +32,8 @@ import RefsDemo from './components/refs/RefsDemo';
 import FocusInput from './components/refs/FocusInput';
 import FRParentInput from './components/refs/FRParentInput';
 // import PortalDemo from './components/portals/PortalDemo';
-import Hero from './components/errorboundary/Hero';
-import ErrorBoundary from './components/errorboundary/ErrorBoundary';
+// import Hero from './components/errorboundary/Hero';
+// import ErrorBoundary from './components/errorboundary/ErrorBoundary';
 
 class App extends Component {
   render() {
@@ -153,7 +153,7 @@ class App extends Component {
         <p> Portals </p>
         <PortalDemo /> */}
         {/* Error Boundary */}
-        <h1 style={{ color: 'red' }}>--Error Boundary--</h1>
+        {/* <h1 style={{ color: 'red' }}>--Error Boundary--</h1>
         <ErrorBoundary>
           <Hero heroName='Batman' />
         </ErrorBoundary>
@@ -162,7 +162,7 @@ class App extends Component {
         </ErrorBoundary>
         <ErrorBoundary>
           <Hero heroName='Joker' />
-        </ErrorBoundary>
+        </ErrorBoundary> */}
       </div>
     );
   }
