@@ -30,18 +30,33 @@ class PostForm extends Component {
   };
 
   render() {
-    // const { userId, title, body } = this.state;
+    const { userId, title, body } = this.state;
     return (
       <div>
         <form onSubmit={this.submitHandler}>
           <div>
-            <input type='text' name='userId' onChange={this.changeHandler} />
+            <input
+              type='text'
+              name='userId'
+              value={userId}
+              onChange={this.changeHandler}
+            />
           </div>
           <div>
-            <input type='text' name='title' onChange={this.changeHandler} />
+            <input
+              type='text'
+              name='title'
+              value={title}
+              onChange={this.changeHandler}
+            />
           </div>
           <div>
-            <input type='text' name='body' onChange={this.changeHandler} />
+            <input
+              type='text'
+              value={body}
+              name='body'
+              onChange={this.changeHandler}
+            />
           </div>
           <button type='submit'>Submit</button>
         </form>
