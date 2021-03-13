@@ -33,6 +33,10 @@ import FocusInput from './components/refs/FocusInput';
 import FRParentInput from './components/refs/FRParentInput';
 import ClickCounter from './components/higherOrderComponent/ClickCounter';
 import HoverCounter from './components/higherOrderComponent/HoverCounter';
+import ClickCounterTwo from './components/renderProps/ClickCounterTwo';
+import HoverCounterTwo from './components/renderProps/HoverCounterTwo';
+import User from './components/renderProps/User';
+import Counter from './components/renderProps/Counter';
 
 // import PortalDemo from './components/portals/PortalDemo';
 // import Hero from './components/errorboundary/Hero';
@@ -167,9 +171,37 @@ class App extends Component {
           <Hero heroName='Joker' />
         </ErrorBoundary> */}
         {/* Higher Order Component */}
-        <h1 style={{ color: 'red' }}>--Higher Order Components--</h1>
+        <h1 style={{ color: 'red' }}>
+          --Higher Order Components Sharing Functionality--
+        </h1>
         <ClickCounter name='Rico' />
         <HoverCounter />
+        {/* Render Props */}
+        <h1 style={{ color: 'red' }}>--Render Props Sharing Functionality--</h1>
+
+        {/* 1st Aprroach */}
+        {/* <Counter
+          render={(count, incrementCount) => (
+            <ClickCounterTwo count={count} incrementCount={incrementCount} />
+          )}
+        />
+        <Counter
+          render={(count, incrementCount) => (
+            <HoverCounterTwo count={count} incrementCount={incrementCount} />
+          )}
+        /> */}
+        {/* 2nd Approach */}
+        <Counter>
+          {(count, incrementCount) => (
+            <ClickCounterTwo count={count} incrementCount={incrementCount} />
+          )}
+        </Counter>
+        <Counter>
+          {(count, incrementCount) => (
+            <HoverCounterTwo count={count} incrementCount={incrementCount} />
+          )}
+        </Counter>
+        <User render={(isLoggedIn) => (isLoggedIn ? 'Rico' : 'Guest')} />
       </div>
     );
   }
