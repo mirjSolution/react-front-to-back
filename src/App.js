@@ -31,6 +31,7 @@ import ParentComp1 from './components/memo/ParentComp1';
 import RefsDemo from './components/refs/RefsDemo';
 import FocusInput from './components/refs/FocusInput';
 import FRParentInput from './components/refs/FRParentInput';
+import PortalDemo from './components/portals/PortalDemo';
 
 class App extends Component {
   render() {
@@ -145,6 +146,10 @@ class App extends Component {
         <FocusInput />
         <p> Ref forwarding</p>
         <FRParentInput />
+        {/* Portals */}
+        <h1 style={{ color: 'red' }}>--Portals--</h1>
+        <p> Portals </p>
+        <PortalDemo />
       </div>
     );
   }
