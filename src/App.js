@@ -62,6 +62,8 @@ import CounterReducerOne from './components/useReducer/CounterReducerOne';
 import CounterReducerTwo from './components/useReducer/CounterReducerTwo';
 import ComponentUseReducerWithUseContext from './components/useReducer/ComponentUseReducerWithUseContext';
 import CounterReducerThree from './components/useReducer/CounterReducerThree';
+import DataFetchingOne from './components/useReducer/DataFetchingOne';
+import DataFetching2 from './components/useReducer/DataFetching2';
 
 // import ClassMouse from './components/useEffect/ClassMouse';
 // import ClassCounterOne from './components/useEffect/ClassCounterOne';
@@ -272,6 +274,9 @@ class App extends Component {
         <CounterReducerThree />
         <h1 style={{ color: 'red' }}>--useReducer with userContext--</h1>
         <ComponentUseReducerWithUseContext />
+        <h1 style={{ color: 'red' }}>--Fetching data with useReducer--</h1>
+        <DataFetchingOne />
+        <DataFetching2 />
       </div>
     );
   }
