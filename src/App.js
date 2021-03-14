@@ -58,6 +58,7 @@ import MouseContainer from './components/useEffect/MouseContainer';
 import IntervalHookCounter from './components/useEffect/IntervalHookCounter';
 import DataFetchng from './components/useEffect/DataFetchng';
 import ComponentG from './components/useContext/ComponentG';
+import CounterReducerOne from './components/useReducer/CounterReducerOne';
 
 // import ClassMouse from './components/useEffect/ClassMouse';
 // import ClassCounterOne from './components/useEffect/ClassCounterOne';
@@ -259,6 +260,9 @@ class App extends Component {
         <DataFetchng />
         <h1 style={{ color: 'red' }}>--useContext--</h1>
         <ComponentG />
+        <h1 style={{ color: 'red' }}>--useReducer--</h1>
+        <h1 style={{ color: 'red' }}>--simple state and action--</h1>
+        <CounterReducerOne />
       </div>
     );
   }
