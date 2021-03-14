@@ -51,6 +51,8 @@ import HookCounter from './components/useState/HookCounter';
 import HookCounterTwo from './components/useState/HookCounterTwo';
 import HookCounterThree from './components/useState/HookCounterThree';
 import HookCounterFour from './components/useState/HookCounterFour';
+import HookCounterOne from './components/useEffect/HookCounterOne';
+// import ClassCounterOne from './components/useEffect/ClassCounterOne';
 
 class App extends Component {
   render() {
@@ -231,6 +233,10 @@ class App extends Component {
         <HookCounterThree />
         <h1 style={{ color: 'red' }}>--useState using array--</h1>
         <HookCounterFour />
+        <h1 style={{ color: 'red' }}>--useEffect--</h1>
+        <h1 style={{ color: 'red' }}>--Conditionally run effects--</h1>
+        {/* <ClassCounterOne /> */}
+        <HookCounterOne />
       </div>
     );
   }
