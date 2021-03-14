@@ -57,6 +57,8 @@ import MouseContainer from './components/useEffect/MouseContainer';
 // import IntervalClassCounter from './components/useEffect/IntervalClassCounter';
 import IntervalHookCounter from './components/useEffect/IntervalHookCounter';
 import DataFetchng from './components/useEffect/DataFetchng';
+import ComponentG from './components/useContext/ComponentG';
+
 // import ClassMouse from './components/useEffect/ClassMouse';
 // import ClassCounterOne from './components/useEffect/ClassCounterOne';
 
@@ -255,6 +257,8 @@ class App extends Component {
         <IntervalHookCounter />
         <h1 style={{ color: 'red' }}>--Fetching data with useEffect--</h1>
         <DataFetchng />
+        <h1 style={{ color: 'red' }}>--useContext--</h1>
+        <ComponentG />
       </div>
     );
   }
