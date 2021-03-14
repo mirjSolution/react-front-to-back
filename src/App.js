@@ -46,6 +46,12 @@ import PostForm from './components/reactHTTP/PostForm';
 // import Hero from './components/errorboundary/Hero';
 // import ErrorBoundary from './components/errorboundary/ErrorBoundary';
 
+// Hooks
+import HookCounter from './components/useState/HookCounter';
+import HookCounterTwo from './components/useState/HookCounterTwo';
+import HookCounterThree from './components/useState/HookCounterThree';
+import HookCounterFour from './components/useState/HookCounterFour';
+
 class App extends Component {
   render() {
     return (
@@ -216,6 +222,15 @@ class App extends Component {
         <PostList />
         <h1 style={{ color: 'red' }}>--React Axios HTTP POST--</h1>
         <PostForm />
+        {/* Hooks */}
+        <h1 style={{ color: 'red' }}>--------Hooks--------</h1>
+        <h1 style={{ color: 'red' }}>--useState--</h1>
+        <HookCounter />
+        <HookCounterTwo />
+        <h1 style={{ color: 'red' }}>--useState using objects--</h1>
+        <HookCounterThree />
+        <h1 style={{ color: 'red' }}>--useState using array--</h1>
+        <HookCounterFour />
       </div>
     );
   }
