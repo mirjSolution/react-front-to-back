@@ -53,6 +53,7 @@ import HookCounterThree from './components/useState/HookCounterThree';
 import HookCounterFour from './components/useState/HookCounterFour';
 import HookCounterOne from './components/useEffect/HookCounterOne';
 import HookMouse from './components/useEffect/HookMouse';
+import MouseContainer from './components/useEffect/MouseContainer';
 // import ClassMouse from './components/useEffect/ClassMouse';
 // import ClassCounterOne from './components/useEffect/ClassCounterOne';
 
@@ -239,9 +240,11 @@ class App extends Component {
         <h1 style={{ color: 'red' }}>--Conditionally run effects--</h1>
         {/* <ClassCounterOne /> */}
         <HookCounterOne />
-        <h1 style={{ color: 'red' }}>--Run effects only one--</h1>
+        <h1 style={{ color: 'red' }}>--Run effects only once--</h1>
         {/* <ClassMouse /> */}
         <HookMouse />
+        <h1 style={{ color: 'red' }}>--useEffect with cleanup--</h1>
+        <MouseContainer />
       </div>
     );
   }
