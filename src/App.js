@@ -61,6 +61,7 @@ import ComponentG from './components/useContext/ComponentG';
 import CounterReducerOne from './components/useReducer/CounterReducerOne';
 import CounterReducerTwo from './components/useReducer/CounterReducerTwo';
 import ComponentUseReducerWithUseContext from './components/useReducer/ComponentUseReducerWithUseContext';
+import CounterReducerThree from './components/useReducer/CounterReducerThree';
 
 // import ClassMouse from './components/useEffect/ClassMouse';
 // import ClassCounterOne from './components/useEffect/ClassCounterOne';
@@ -267,6 +268,8 @@ class App extends Component {
         <CounterReducerOne />
         <h1 style={{ color: 'red' }}>--complex state and action--</h1>
         <CounterReducerTwo />
+        <h1 style={{ color: 'red' }}>--Multiple useReducers--</h1>
+        <CounterReducerThree />
         <h1 style={{ color: 'red' }}>--useReducer with userContext--</h1>
         <ComponentUseReducerWithUseContext />
       </div>
