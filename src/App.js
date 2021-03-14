@@ -54,6 +54,8 @@ import HookCounterFour from './components/useState/HookCounterFour';
 import HookCounterOne from './components/useEffect/HookCounterOne';
 import HookMouse from './components/useEffect/HookMouse';
 import MouseContainer from './components/useEffect/MouseContainer';
+import IntervalClassCounter from './components/useEffect/IntervalClassCounter';
+import IntervalHookCounter from './components/useEffect/IntervalHookCounter';
 // import ClassMouse from './components/useEffect/ClassMouse';
 // import ClassCounterOne from './components/useEffect/ClassCounterOne';
 
@@ -245,6 +247,11 @@ class App extends Component {
         <HookMouse />
         <h1 style={{ color: 'red' }}>--useEffect with cleanup--</h1>
         <MouseContainer />
+        <h1 style={{ color: 'red' }}>
+          --useEffect with incorrect dependency--
+        </h1>
+        <IntervalClassCounter />
+        <IntervalHookCounter />
       </div>
     );
   }
