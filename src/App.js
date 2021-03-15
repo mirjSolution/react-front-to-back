@@ -66,6 +66,9 @@ import DataFetchingOne from './components/useReducer/DataFetchingOne';
 import DataFetching2 from './components/useReducer/DataFetching2';
 import ParentComponentuseCallback from './components/useCallback/ParentComponentuseCallback';
 import CounterMemo from './components/useMemo/CounterMemo';
+import FocusInputUseRef from './components/useRef/FocusInputUseRef';
+import ClassTimer from './components/useRef/ClassTimer';
+import HookTimer from './components/useRef/HookTimer';
 
 // import ClassMouse from './components/useEffect/ClassMouse';
 // import ClassCounterOne from './components/useEffect/ClassCounterOne';
@@ -283,6 +286,10 @@ class App extends Component {
         <ParentComponentuseCallback />
         <h1 style={{ color: 'red' }}>--useMemo--</h1>
         <CounterMemo />
+        <h1 style={{ color: 'red' }}>--useRef--</h1>
+        <FocusInputUseRef />
+        <ClassTimer />
+        <HookTimer />
       </div>
     );
   }
