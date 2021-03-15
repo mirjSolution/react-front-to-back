@@ -64,6 +64,7 @@ import ComponentUseReducerWithUseContext from './components/useReducer/Component
 import CounterReducerThree from './components/useReducer/CounterReducerThree';
 import DataFetchingOne from './components/useReducer/DataFetchingOne';
 import DataFetching2 from './components/useReducer/DataFetching2';
+import ParentComponentuseCallback from './components/useCallback/ParentComponentuseCallback';
 
 // import ClassMouse from './components/useEffect/ClassMouse';
 // import ClassCounterOne from './components/useEffect/ClassCounterOne';
@@ -277,6 +278,8 @@ class App extends Component {
         <h1 style={{ color: 'red' }}>--Fetching data with useReducer--</h1>
         <DataFetchingOne />
         <DataFetching2 />
+        <h1 style={{ color: 'red' }}>--useCallback--</h1>
+        <ParentComponentuseCallback />
       </div>
     );
   }
