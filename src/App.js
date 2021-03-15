@@ -73,6 +73,7 @@ import ParentCounterUseImperativeHandler from './components/useImperativeHandle/
 import ParentDebugValue from './components/useDebugValue/ParentDebugValue';
 import ParentUseLayoutEffect from './components/useLayoutEffect/ParentUseLayoutEffect';
 import ParentCustomHook from './components/customHooks/ParentCustomHook';
+import ParentCounterHook from './components/customHooks/ParentCounterHook';
 
 // import ClassMouse from './components/useEffect/ClassMouse';
 // import ClassCounterOne from './components/useEffect/ClassCounterOne';
@@ -303,6 +304,8 @@ class App extends Component {
         <h1 style={{ color: 'red' }}>--custom Hooks--</h1>
         <h2 style={{ color: 'blue' }}>--useDocumentTitle Custom Hook--</h2>
         <ParentCustomHook />
+        <h2 style={{ color: 'blue' }}>--useCounter Custom Hook--</h2>
+        <ParentCounterHook />
       </div>
     );
   }
