@@ -72,6 +72,7 @@ import HookTimer from './components/useRef/HookTimer';
 import ParentCounterUseImperativeHandler from './components/useImperativeHandle/ParentCounterUseImperativeHandler';
 import ParentDebugValue from './components/useDebugValue/ParentDebugValue';
 import ParentUseLayoutEffect from './components/useLayoutEffect/ParentUseLayoutEffect';
+import ParentCustomHook from './components/customHooks/ParentCustomHook';
 
 // import ClassMouse from './components/useEffect/ClassMouse';
 // import ClassCounterOne from './components/useEffect/ClassCounterOne';
@@ -299,6 +300,9 @@ class App extends Component {
         <ParentDebugValue />
         <h1 style={{ color: 'red' }}>--useLayoutEffect--</h1>
         <ParentUseLayoutEffect />
+        <h1 style={{ color: 'red' }}>--custom Hooks--</h1>
+        <h2 style={{ color: 'blue' }}>--useDocumentTitle Custom Hook--</h2>
+        <ParentCustomHook />
       </div>
     );
   }
