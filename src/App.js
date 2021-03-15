@@ -65,6 +65,7 @@ import CounterReducerThree from './components/useReducer/CounterReducerThree';
 import DataFetchingOne from './components/useReducer/DataFetchingOne';
 import DataFetching2 from './components/useReducer/DataFetching2';
 import ParentComponentuseCallback from './components/useCallback/ParentComponentuseCallback';
+import CounterMemo from './components/useMemo/CounterMemo';
 
 // import ClassMouse from './components/useEffect/ClassMouse';
 // import ClassCounterOne from './components/useEffect/ClassCounterOne';
@@ -280,6 +281,8 @@ class App extends Component {
         <DataFetching2 />
         <h1 style={{ color: 'red' }}>--useCallback--</h1>
         <ParentComponentuseCallback />
+        <h1 style={{ color: 'red' }}>--useMemo--</h1>
+        <CounterMemo />
       </div>
     );
   }
