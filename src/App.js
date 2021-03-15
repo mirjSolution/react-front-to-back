@@ -70,6 +70,7 @@ import FocusInputUseRef from './components/useRef/FocusInputUseRef';
 import ClassTimer from './components/useRef/ClassTimer';
 import HookTimer from './components/useRef/HookTimer';
 import ParentCounterUseImperativeHandler from './components/useImperativeHandle/ParentCounterUseImperativeHandler';
+import ParentDebugValue from './components/useDebugValue/ParentDebugValue';
 
 // import ClassMouse from './components/useEffect/ClassMouse';
 // import ClassCounterOne from './components/useEffect/ClassCounterOne';
@@ -293,6 +294,8 @@ class App extends Component {
         <HookTimer />
         <h1 style={{ color: 'red' }}>--useImperativeHandle--</h1>
         <ParentCounterUseImperativeHandler />
+        <h1 style={{ color: 'red' }}>--useDebugValue--</h1>
+        <ParentDebugValue />
       </div>
     );
   }
