@@ -74,6 +74,7 @@ import ParentDebugValue from './components/useDebugValue/ParentDebugValue';
 import ParentUseLayoutEffect from './components/useLayoutEffect/ParentUseLayoutEffect';
 import ParentCustomHook from './components/customHooks/ParentCustomHook';
 import ParentCounterHook from './components/customHooks/ParentCounterHook';
+import UserFormCustom from './components/customHooks/UserFormCustom';
 
 // import ClassMouse from './components/useEffect/ClassMouse';
 // import ClassCounterOne from './components/useEffect/ClassCounterOne';
@@ -306,6 +307,8 @@ class App extends Component {
         <ParentCustomHook />
         <h2 style={{ color: 'blue' }}>--useCounter Custom Hook--</h2>
         <ParentCounterHook />
+        <h2 style={{ color: 'blue' }}>--useInput Custom Hook--</h2>
+        <UserFormCustom />
       </div>
     );
   }
