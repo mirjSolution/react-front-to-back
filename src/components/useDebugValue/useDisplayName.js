@@ -5,7 +5,7 @@ function useDisplayName() {
 
   useEffect(() => {
     setDisplayName('Rico');
-  });
+  }, []);
 
   useDebugValue(displayName ?? 'loading');
 
